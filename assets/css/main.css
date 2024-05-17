@@ -22,8 +22,7 @@ p {
 
 b {
 	font-family: "Inter", sans-serif;  
-	font-optical-sizing: auto;
-	font-weight: 800;
+	font-weight: 700;
 	font-style: bold; color: #9faccb;
  
 
@@ -49,6 +48,9 @@ a{
 	font-style: normal; color: #7cc088;
 	
 
+}
+a:hover{
+	text-decoration: underline;
 }
 
 iframe {
