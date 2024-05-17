@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>L-Systems </title>
+	<meta name="author"      content="Nome Cognome">
+	<meta name="description" content="Descrizione">
+	<meta name="viewport"    content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet"   href="./assets/css/main.css">
+</head>
+<body>
+	<main class="contenitore">
+
+		<!-- --------------------------------------------------------------------- -->
+
+		<header>
+			<span></span>
+			<h1>L-Systems</h1>
+		</header>
+		
+
+		<!-- --------------------------------------------------------------------- -->
+
+		<section class="filetto">
+			
+			<h4 class="titolo-sezione"> <br>L-Systems</h4>
+			<div class="contenuto-sezione">
+
+				 <image  style="width:50%"  src="./assets/img/trees.png"></image>
+				<p>
+					
+ 
+				 Un sistema Lindenmayer, o L-system, è un sistema di riscrittura parallelo e un tipo di grammatica formale.
+				 Come biologo, Lindenmayer ha lavorato con lieviti e funghi filamentosi e ha studiato i modelli di crescita di vari tipi di batteri.
+				 <p></p>
+				  Originariamente gli L-Systems sono stati ideati per fornire una descrizione formale dello sviluppo di tali organismi
+				 multicellulari semplici e per illustrare le relazioni di vicinato tra le cellule vegetali.
+				 L’enfasi era sulle relazioni spaziali tra cellule o moduli di piante più grandi. Il lavoro originale era limitato a una forma di base.
+				  Successivamente, sono state proposte diverse interpretazioni geometriche degli L-System al fine di trasformarle in 
+				 uno strumento più versatile per la modellazione di intere topologie di impianto.
+				 <p></p> 
+				 Utilizzando tecniche come la codifica della catena si è perfezionata una geometria per rappresentare le immagini
+				  e si è dimostrato che dei sistemi molto semplici possono generare curve frattali. 
+				 Si sono individuati L-Systems che generano curve classiche di riempimento dello spazio. 
+						
+				</p>
+				
+			</div>
+		</section>
+
+		<!-- --------------------------------------------------------------------- -->
+
+		<section class="filetto">
+			<h4 class="titolo-sezione"> <br>Come funziona il linguaggio</h4>
+			<div class="contenuto-sezione">
+				<p>
+					Il linguaggio è molto semplice. È costituito da simboli (l’alfabeto) e da regole di produzione.
+					Il primo stato della frase si chiama assioma. 
+					Le regole di produzione possono essere applicate ripetutamente su questo assioma per evolvere o far crescere il sistema. 
+					
+					<p></p>
+				 
+					
+			     Un esempio è quello della crescita di un alga:
+			     </p>
+				
+				
+				  <img style="width:70%" src="./assets/img/spigazione-l-system.gif">
+			
+
+			     <img style="width:35%" src="./assets/img/albero 1.gif">
+		
+		          <img style="width:35%" src="./assets/img/albero 2.gif">
+		
+				
+			</div>
+		</section>
+
+		<!-- --------------------------------------------------------------------- -->
+
+		<section class="filetto">
+			<h4 class="titolo-sezione"><br>Rappresentazioni di frasi</h4>
+			<div class="contenuto-sezione">
+				<p></p>
+					Dopo che un sistema è stato definito, abbiamo una frase lunga con proprietà interessanti. 
+					Per visualizzare queste proprietà, è necessario ideare un metodo per rappresentarle:
+					utilizziamo il sistema utilizzando la grafica della tartaruga .
+                    La grafica della tartaruga viene renderizzata posizionando una “tartaruga” su un piano cartesiano e passando le istruzioni a questa tartaruga. 
+					La tartaruga si muove secondo le istruzioni che riceve. La tartaruga disegna lasciando dietro di sé una traccia. 
+					In questo caso, ogni simbolo di una frase del sistema L viene inviato alla tartaruga. 
+					
+					Clicca <a href="https://www.kevs3d.co.uk/dev/lsystems/">qui</a> per vedere esempi di L-Systems
+					
+					
+
+				     
+					
+                <p></p>
+		                
+
+				
+				
+			</div>
+		</section>
+
+		<!-- --------------------------------------------------------------------- -->
+
+		<section class="filetto">
+			<h4 class="titolo-sezione"><br>Elenco di tutti i somboli supportati da L-Systems e dal grafico della tartaruga</h4>
+			<div class="contenuto-sezione">
+				<p>
+					
+             + ruota Y attorno ad angoli definiti
+             <p>
+
+
+               - ruota Y attorno ad angoli negativi definiti 
+             <p></p>
+              & ruota Z attorno ad angoli definiti
+               <p></p>
+             ^ ruota Z attorno ad angoli negativi definiti
+               <p></p>
+              \ ruota X attorno ad angoli negativi definiti
+             <p></p>
+              < ruota X attorno ad  angoli negativi definiti
+             <p></p>
+             / ruota X attorno ad angoli definiti
+              <p></p>
+              > ruota X attorno ad angoli definiti
+              <p></p>
+                | ruota Y attorno ai 180 gradi definiti
+               <p></p>
+             ! incrementa lindice del segmento 
+             <p></p>
+             ' riduce l'indice del segmento
+             <p></p>
+              [ inizia il ramo
+              <p></p>
+                 ] termina il ramo
+
+
+				</p>
+				
+			</div>
+		</section>
+
+<!-- --------------------------------------------------------------------- -->
+
+		<section class="filetto">
+			<h4 class="titolo-sezione"><br> Curva di Koch</h4>
+			<div class="contenuto-sezione">
+				<p>
+					La curva di Koch è una delle prime curve frattali di cui si conosca una descrizione. 
+					Apparve per la prima volta su un documento del 1904 del matematico svedese Helge von Koch. 
+					La curva, infinitamente frastagliata, ha lunghezza infinita, ed è un esempio di curva continua e non derivabile.
+					<p></p>
+					Generazione della curva: 
+                  La generazione della curva di Koch avviene grazie all’esecuzione ripetuta di un programma di istruzioni o procedura ricorsiva:
+                 è una procedura perché precisamente definita da un numero finito di passi, è ricorsiva perché viene ripetuta meccanicamente.
+                 <p></p>
+                  Partendo da un segmento di determinata lunghezza
+                  dividere il segmento in tre segmenti uguali;
+                  cancellare il segmento centrale, sostituendolo con due segmenti identici che costituiscono i due lati di un triangolo equilatero;
+                 tornare al punto 1 per ognuno degli attuali segmenti.
+                   <p></p>
+                  Partendo da un segmento, se ne ottengono quindi quattro (costituenti una linea spezzata) nel primo ciclo,
+                   4x4=16 nel secondo ciclo e così via, generando un frattale. Ingrandendo un qualunque dettaglio del frattale si ottiene ancora lo stesso frattale: 
+                    in questo consiste l'auto similarità e la struttura fine dei frattali a qualunque livello di scala.
+				 </p>
+				
+				   <img style="width:35%" src="./assets/img/koch curva.gif">
+				
+			</div>
+		</section>
+
+<!-- --------------------------------------------------------------------- -->
+
+<section class="filetto">
+	<h4 class="titolo-sezione"><br> Triangoli di Sierpinski</h4>
+	<div class="contenuto-sezione">
+		<p>
+			<img style="width:90%" src="./assets/img/Sierpinsky_triangle_(evolution).png">
+			
+		
+		  <p></p>
+		   Il triangolo di Sierpiński è un frattale, così chiamato dal nome di Wacław Sierpiński che lo descrisse nel 1915.
+		 È un esempio base di insieme auto-similare, cioè matematicamente generato da un pattern che si ripete allo stesso modo su scale diverse. 
+		 È una figura replicante di ordine tre potendosi scomporre in tre sue miniature.
+		 <p></p>
+		 
+		 <img style="width:35%" src="./assets/img/triangolo 1.gif">
+
+		
+	</div>
+</section>
+
+<!-- --------------------------------------------------------------------- -->
+
+<section class="filetto">
+	<h4 class="titolo-sezione"><br> Generazione attraverso limite di successioni</h4>
+	<div class="contenuto-sezione">
+		<p>
+			Partendo dal triangolo:
+			<p></p> 
+            - Livello 0 Si parte da un triangolo equilatero di lato a.
+          <p></p>
+         - Livello 1 Si congiungono i punti medi di ciascun lato individuando quattro triangoli simili al primo (di lato a/2) di cui tre ugualmente orientati e uno capovolto.
+            <p></p>
+          - Livello 2 Si ripete l’operazione di scomposizione precedente su ciascuno dei tre triangoli non capovolti ottenendo 9 triangolini non capovolti di lato a/4.
+          <p></p>
+          - Livello 3 Si ripete la stessa operazione sui 9 triangoli ottenendone 27 di lato a/8.
+          <p></p>
+           - Livello 4 Si ripete la stessa operazione sui 27 triangoli ottenendone 81 di lato a/16.
+          <p></p>
+          - Livello n Si ottengono 3𝑛  triangoli di lato 2−𝑛𝑎 (ricordiamo che a è il lato del triangolo al livello 0).
+          <p></p>
+          Continuando all’infinito il limite è il triangolo di Sierpinski.
+          <p></p>
+		 
+
+<img style="width:35%" src="./assets/img/triangolo 2.gif">
+	</div>
+</section>
+<!-- --------------------------------------------------------------------- -->
+
+
+<section class="filetto">
+	<h4 class="titolo-sezione"><br> Vantaggi e sfide derivanti dall'utilizzo dei L-Systems</h4>
+	<div class="contenuto-sezione">
+		<p>
+			Gli L-Systems rappresentano un modo flessibile per creare forme in grado di produrre risultati inaspettati e sorprendenti.
+            Tuttavia presentano anche alcune limitazioni, come la difficoltà di controllare il risultato, la complessità delle regole e dei parametri.
+
+
+<p></p>
+		 	
+	</div>
+</section>
+<!-- --------------------------------------------------------------------- -->
+
+<section class="filetto">
+	<h4 class="titolo-sezione"><br> Esempi pratici</h4>
+	<div class="contenuto-sezione">
+		<p>
+			Gli L-Systems sono stai usati per creare opere d’arte e di design molto affascinanti, ad esempio l’Eden Project di Grimshaw Architects che ha utilizzato gli L-System per progettare la struttura esagonale degli ambienti.
+		   <p></p>
+			Clicca <a href="https://grimshaw.global/projects/culture-and-exhibition-halls/the-eden-project-the-biomes/">qui</a> per vedere l'Eden Project
+			<p></p>
+
+			<img style="width:50%" src="./assets/img/eden.jpg">
+			
+
+			<p></p>
+
+            Anche la lampada Hyphae di Nervous System ha utilizzato gli L-Systems per creare una rete ramificata di vene che diffondono la luce attraverso un materiale stampato in 3D.
+         <p></p>
+           Clicca <a href="https://n-e-r-v-o-u-s.com/projects/albums/hyphae/content/growing-a-hyphae-lamp/">qui</a> per vedere la lampada Hyphae
+
+            <p></p>
+
+            <img style="width:35%" src="./assets/img/lampada.png">
+
+
+
+             <p></p>
+		 	
+	</div>
+</section>
+<!-- --------------------------------------------------------------------- -->
+
+<section class="filetto">
+	<h4 class="titolo-sezione"><br> Arte generativa</h4>
+	<div class="contenuto-sezione">
+		<p>
+	     L’arte generativa è un metodo di progettazione che utilizza algoritmi e parametri per creare una gamma di possibili soluzioni.
+         Gli L-Systems sono un tipo di design generativo in grado di creare forme complesse e organiche utilizzando semplici regole e ripetizioni,
+         possono anche essere modificati cambiando i parametri ad esempio l’angolo, la lunghezza o la casualità, per produrre diverse variazioni della stessa forma.
+         Gli L-Systems possono essere utilizzati per generare forme e modelli che imitano strutture naturali come alberi, foglie, fiori, conchiglie o frattali 
+         (figura geometrica che si ripete all'infinito uguale a sé stessa,
+          su scala sempre più piccola).
+
+
+			
+
+
+        <p></p>
+		 	
+	</div>
+</section>
+<!-- --------------------------------------------------------------------- -->
+
+		<section class="filetto">
+			<h4 class="titolo-sezione">Bibliografia</h4>
+			<div class="contenuto-sezione">
+				<ul>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+					<li>Maecenas quis ante sit amet neque cursus hendrerit ac sit amet nisl</li>
+					<li>In cursus aliquam odio eu eleifend</li>
+					<li>Ut sed auctor magna</li>
+					<li>In hac habitasse platea dictumst</li>
+					<li>Aliquam aliquam nisl mi</li>
+					<li>Phasellus et orci elit</li>
+					<li>Maecenas vehicula elit et lacus accumsan consequat</li>
+					<li>Nam consectetur lacus ante</li>
+					<li>Vestibulum et massa dolor</li>
+					<li>Aenean condimentum blandit eros non dapibus</li>
+					<li>Maecenas quam nulla, porta eu nibh in, cursus iaculis mauris</li>
+					<li>Phasellus sit amet nulla eu tellus dictum cursus</li>
+					<li>Sed aliquet, ipsum sit amet tempus semper, augue velit consequat mi, et gravida sem purus a quam</li>
+				</ul>
+
+			</div>
+		</section>
+	</main>
+</body>
+</html>
