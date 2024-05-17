@@ -28,6 +28,7 @@ h1 {
 
 h4 {
 	margin: 0;
+	margin: 2;
 	font-style: bold; color: #cc194e;
 	font-size: 1.5em;
 }
@@ -57,7 +58,7 @@ section {
 }
 
 .titolo-sezione {
-	margin-right: 1em;
+	margin-right: 0em;
 }
 
 .contenitore {
