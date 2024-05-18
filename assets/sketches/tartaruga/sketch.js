@@ -14,7 +14,7 @@ therules[1] = ['B', '+AF-BFB-FA+']; // second rule
 let whereinstring = 0; // where in the L-system are we?
 
 function setup() {
-  createCanvas(500, 300);
+  createCanvas(900, 300);
   background(26,35,47);
   stroke(124, 192, 136, 255);
 
