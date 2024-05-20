@@ -1,5 +1,5 @@
 # L-Systems
-Elaborato per l'esame del corso di Matematica per il design.  
+Progetto d'esame per il corso di Matematica per il design.  
 
 Primo Triennio Isia Urbino.  
 
